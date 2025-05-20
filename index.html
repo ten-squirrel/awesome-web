@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+	Your browser does not support the HTML canvas tag.
+	</canvas>
+<script>
+	var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "#FF0000";
+	ctx.fillRect(0, 0, 80, 100);
+</script>
+
+<style>
+	#div1 {
+	width: 170px;
+	height: 380px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+	}
+	</style>
+	<script>
+	function dragstartHandler(ev) {
+	ev.dataTransfer.setData("text", ev.target.id);
+	}
+	
+	function dragoverHandler(ev) {
+	ev.preventDefault();
+	}
+	
+	function dropHandler(ev) {
+	ev.preventDefault();
+	const data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+	</head>
+	<body>
+	
+	<h1>Drag and Drop API</h1>
+	
+	<p>Drag the W3Schools image into the rectangle:</p>
+	
+	<div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+	<br>
+	<img id="img1" src="IMG_0864.JPG" draggable="true" ondragstart="dragstartHandler(event)" width="150" height="336">
+
+</body>
+</html>
