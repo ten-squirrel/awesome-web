@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 웹사이트</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+
+        main {
+            min-height: calc(100vh - 200px);
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+		#about {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+		.about-text {
+            flex: 1;
+        }
+
+        .profile-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+		#techstack {
+			text-align: center;
+		}
+
+		.tech-item {
+			align-items: center;
+            display: flex;
+            /* flex-direction: column; */
+            gap: 0.5rem;
+        }
+
+		#projects {
+			text-align: center;
+			padding: 7rem;
+		}
+
+		.project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background: pink;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+		.box {
+		width: 100px;
+		height: 100px;
+		background-color: white;
+		margin: 1px; /* 사각형 간 간격 */
+		flex-grow: 1; /* 각 사각형이 동일한 크기로 늘어나도록 */
+	}
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#techstack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+			<li><a href="#contact"></a>Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home">
+            <p></p>
+        </section>
+
+        <section id="about">
+			<div class="about-text">
+				<h3>Hi 👋,</h3>
+				<h3>제 이름은 토리에요!</h3>
+				<h3>저는 웹 개발을 잘 해요!</h3>
+			</div>
+			<div class="profile-image">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nfGVufDB8fDB8fHww" alt="귀여운 강아지">
+            </div>
+        </section>
+
+        <section id="techstack">
+            <h3>My Tech Stack</h3>
+            <h6>제가 주로 사용하는 기술 스택이에오</h6>
+			<div class="tech-item" style="justify-content: center;">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+			</div>
+			<div class="tech-item" style="justify-content: center;">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+				<img src="tech-stack-4.svg" alt="Tech Stack" class="tech-icon">
+			</div>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <h6>제가 진행한 프로젝트 들이에요</h6>
+			<div class="project-grid">
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="box"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="project-card"></div>
+				<div class="box"></div>
+			</div>
+        </section>
+    </main>
+
+    <footer>
+		<section id="contact">
+			<p>010-0000-0000</p>
+		</section>
+        <p>&copy; 2024 웹사이트. All rights reserved.</p>
+    </footer>
+</body>
+</html>
