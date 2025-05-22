@@ -1,0 +1,323 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+}
+
+header {
+	background-color: white;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+}
+
+nav {
+	background-color: white;
+	padding: 1rem;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	padding-right: 2rem;
+	align-items: center;
+}
+
+nav a {
+	color: #b8b6b6;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+.github-link {
+	color: #b8b6b6;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.github-link:hover {
+	color: #666;
+}
+
+nav a:hover {
+	color: #666;
+}
+
+main {
+	min-height: calc(100vh - 200px);
+	/* padding: 2rem; */
+	margin: 0 auto;
+}
+
+footer {
+	background-color: white;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+#about {
+	display: flex;
+	align-items: center;
+	max-width: 1228px;
+	height: 300px;
+	gap: 1rem;
+	padding: 7rem;
+}
+
+.about-text {
+	font-family: Noto Sans;
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 50px;
+	align-items: center;
+	letter-spacing: -1px;
+	max-width: 350px;
+/* Hi 👋,제 이름은 */ 
+/* color: #42446E 
+
+/*  토 */ 
+/* color: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%)  */
+
+/* 리에요!저는 웹 개발을 잘 해요 */ 
+/* color: #42446E  */ 
+}
+
+.tech-item{
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.profile-image {
+	flex: 1;
+	text-align: center;
+}
+
+.profile-image img {
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #333;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+#techstack {
+	text-align: center;
+	padding: 2rem;
+}
+
+.tech-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 2rem;
+	max-width: 800px;
+	margin: 2rem auto;
+	justify-items: center;
+	align-items: center;
+}
+
+.tech-item {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tech-item img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+#projects {
+	text-align: center;
+	/* padding: 7rem; */
+}
+
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.project-card {
+	max-width: 374px;
+	max-height: 567px;
+	border-radius: 20px;
+	opacity: 1;
+	background: #FFFFFF;
+	box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-content{
+	display: flex;
+	flex-direction: column;	
+	gap: 24px;
+	padding: 30px;
+}
+.project-card-title{
+	font-family: Noto Sans;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 26px;
+	text-align: start;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+.project-card-description{
+	font-family: Noto Sans;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 26px;
+	text-align: start;
+	letter-spacing: 0px;
+	/* dark content */
+	color: #666666;
+}
+.project-card-techstack{
+	font-family: Noto Sans;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: #666666;
+	text-align: start;
+}
+.project-card-techstack-title{
+	color: #42446E;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.project-card-image{
+	background-size: cover;
+	max-width: 374px;
+	max-height: 260px;	
+}
+
+.project-card-footer-item1{
+	display: flex;
+	gap: 10px;
+}
+
+.project-card-footer-item2{
+	display: flex;
+	gap: 12px;
+}
+
+.project-card-footer{
+	gap: 54px;
+	display: flex;
+}
+
+#contact {
+	text-align: center;
+	color: black;
+	opacity: 1;
+	background: #FFFFFF;
+}
+.contact-item {
+    background: white;
+    border-radius: 10px;
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contact-block {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-card-footer-item-text{
+	font-family: Noto Sans;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0px;
+	text-decoration: underline;
+	color: #000000;
+}
+
+.footer-text{
+	font-family: DM Sans;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 26px;
+	letter-spacing: 0px;
+	color: #42446E;
+	max-width: 237px;
+}
+
+.footer-right{
+	display: flex;
+	gap: 10px;
+}
+
+.empty-block{
+	width: 420px;
+	height: 1px;
+}
+
+.footer-line{
+	hr{
+		opacity: 0.3;
+		border: 2px solid #666666;
+		max-width: 2px;
+		max-height: 2px;
+	}
+}
+
+.disigned-by {
+	font-family: Noto Sans;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0px;
+	color: #666666;
+}
+
+.pavan-MG{
+	/* Pavan MG */ 
+	color: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%);
+	background: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+	/*  with  */ 
+	/* color: #666666  */
+
+	/* Love */ 
+	/* color: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%)  */
+
+	/*  &  */ 
+	/* color: #666666  */
+
+	/* Coffee */ 
+	/* color: linear-gradient(90deg, #13B0F5 -4%, #13B0F5 -2%, #E70FAA 99%)  */
